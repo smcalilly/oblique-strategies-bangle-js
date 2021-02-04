@@ -16,11 +16,11 @@ setWatch(() => {
   // get the strategy
   const strategy = chooseObliqueness();
   
-  // configure fonts
+  // configure font
   g.setFontAlign(0,0);
   
   // show the oblique strategy
-  E.showMessage(strategy.replace(' '/g, '\n').replace('*', ''));
+  E.showMessage(strategy.replace(/\s/g, '\n'));
   
   // clear the screen
   setTimeout(() => g.clear(), 10000);
