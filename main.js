@@ -14,7 +14,7 @@ setWatch(() => {
   Bangle.beep();
   
   // get the strategy
-  cont strategy = chooseObliqueness();
+  const strategy = chooseObliqueness();
   
   // configure fonts
   g.setFontAlign(0,0);
